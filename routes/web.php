@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/* START CUSTOM PAGES ROUTES */
+Route::get('/', 'CustompagesController@index');
+Route::get('/about', 'CustompagesController@about');
+Route::get('/partners', 'CustompagesController@partners');
+/* START CUSTOM PAGES ROUTES */
+
+/* START CUSTOM PAGES ROUTES */
+
+/* START CUSTOM PAGES ROUTES */
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

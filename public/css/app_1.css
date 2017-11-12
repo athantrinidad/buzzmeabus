@@ -1,0 +1,6 @@
+.mainContainer{
+    margin-top:2%;
+}
+.navbar-collapse {
+    z-index: 9999;
+}
